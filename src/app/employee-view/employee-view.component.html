@@ -1,0 +1,20 @@
+<div *ngIf="employee" class="container">
+    <h2>Employee Details</h2>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ employee.first_name }} {{ employee.last_name }}</mat-card-title>
+        <mat-card-subtitle>{{ employee.email }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Employee ID: {{ employee.id }}<br /><br />
+          First Name: {{ employee.first_name }}<br /><br />
+          Last Name: {{ employee.last_name }}<br /><br />
+          Email: {{ employee.email }}
+        </p>
+      </mat-card-content>
+    </mat-card>
+    <br/>
+    <button mat-raised-button color="warn" routerLink="/employees">Back</button>
+  </div>
+  

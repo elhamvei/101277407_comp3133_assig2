@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+    <span>Employee Manager</span>
+    <span class="spacer"></span>
+    <button *ngIf="authService.isAuthenticated()" mat-button (click)="logout()">
+      Logout
+    </button>
+  </mat-toolbar>
+<div class="main">
+<router-outlet></router-outlet>
+</div>
