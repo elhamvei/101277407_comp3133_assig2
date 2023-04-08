@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    graphqlUrl: 'https://your-production-backend.com/graphql',
+    graphqlUrl: 'https://comp-3133-assignment1.vercel.app/graphql',
   };
