@@ -2,9 +2,8 @@ import {NgModule} from '@angular/core';
 import {ApolloModule, APOLLO_OPTIONS} from 'apollo-angular';
 import {ApolloClientOptions, InMemoryCache} from '@apollo/client/core';
 import {HttpLink} from 'apollo-angular/http';
-import { environment } from '../environments/environment';
 
-const uri = environment.graphqlUrl;
+const uri = 'https://comp-3133-assignment1-backend.vercel.app/graphql';
 export function createApollo(httpLink: HttpLink): ApolloClientOptions<any> {
   return {
     link: httpLink.create({uri}),
